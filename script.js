@@ -204,26 +204,22 @@ const ASSETS = {
     },
   },
   furniture: {
-    // --- Standard Möbel ---
-    'row_combo': { file: 'Tischplusstuhleinzeln.glb', dims: {x: 0.8, z: 1.2}, radius: 0.8, seats: 1, name: "Tisch+Stuhl", acousticBonus: 2.0 },
-    'tano':      { file: 'trapezTisch.glb',           dims: {x: 1.2, z: 0.7}, radius: 0.6, seats: 1, name: "Trapeztisch", acousticBonus: 1.5 },
-    'triangle':  { file: 'dreiecksTisch.glb',         dims: {x: 1.0, z: 0.9}, radius: 0.5, seats: 1, name: "Dreieckstisch", acousticBonus: 1.5 },
-    'chair':     { file: 'roterStuhl.glb',            dims: {x: 0.5, z: 0.5}, radius: 0.4, seats: 1, name: "Stuhl", acousticBonus: 0.8 },
-    'teacher':   { file: 'Lehrertisch.glb',           dims: {x: 1.6, z: 0.8}, radius: 1.0, seats: 0, name: "Lehrerpult", acousticBonus: 2.5 },
-    'cupboard':  { file: 'runderSchrank.glb',         dims: {x: 1.2, z: 0.4}, radius: 0.8, seats: 0, name: "Regal (Rund)", acousticBonus: 3.5 },
-    'board':     { file: 'tafel_skaliert.glb',        dims: {x: 2.0, z: 0.2}, radius: 0.2, seats: 0, isWallItem: true, name: "Tafel", acousticBonus: 1.0 },
+    // --- Standard Möbel (Aktualisiert) ---
+    'row_combo':     { file: 'schulbank_classic_bearbeitet-v14.glb', dims: {x: 0.8, z: 1.2}, radius: 0.8, seats: 1, name: "Schulbank", acousticBonus: 2.0 },
+    'triangle':      { file: 'dreieck_tisch_bearbeitet-v12.glb',     dims: {x: 1.0, z: 0.9}, radius: 0.5, seats: 1, name: "Dreieckstisch", acousticBonus: 1.5 },
+    'chair':         { file: 'schulstuhl_classic-v6.glb',            dims: {x: 0.5, z: 0.5}, radius: 0.4, seats: 1, name: "Schulstuhl", acousticBonus: 0.8 },
+    'chair_red':     { file: 'roter_stuhl_bearbeitet-v9.glb',        dims: {x: 0.5, z: 0.5}, radius: 0.4, seats: 1, name: "Stuhl (Stoff Rot)", acousticBonus: 1.0 },
     
-    // --- NEUE ASSETS ---
-    // Laptop höher gesetzt (0.86), damit er auf dem Tisch steht
-    'laptop':        { file: 'Laptop.glb',         dims: {x: 0.4, z: 0.3}, radius: 0.3, seats: 0, name: "Laptop", acousticBonus: 0.1, yOffset: 1.23 }, 
-    'cabinet_short': { file: 'kurzer Schrank.glb', dims: {x: 1.0, z: 0.5}, radius: 0.7, seats: 0, name: "Schrank (Kurz)", acousticBonus: 4.0 },
-    'cabinet_long':  { file: 'langer_Schrank.glb', dims: {x: 1.8, z: 0.5}, radius: 1.0, seats: 0, name: "Schrank (Lang)", acousticBonus: 6.0 },
-    'sofa':          { file: 'Sofa.glb',           dims: {x: 2.0, z: 0.9}, radius: 1.1, seats: 2, name: "Sofa", acousticBonus: 8.0 },
-    'table_square':  { file: 'Quadrat_Tisch.glb',  dims: {x: 1.0, z: 1.0}, radius: 0.8, seats: 0, name: "Quadrat-Tisch", acousticBonus: 2.0 },
-    'table_double':  { file: '2er_Tisch.glb',      dims: {x: 1.6, z: 0.8}, radius: 1.0, seats: 0, name: "2er Tisch", acousticBonus: 3.0 },
+    'cupboard':      { file: 'runder_schrank_bearbeitet-v13.glb',    dims: {x: 1.2, z: 0.4}, radius: 0.8, seats: 0, name: "Schrank (Rund)", acousticBonus: 3.5 },
+    'cupboard_open': { file: 'schrank_rund_offen-v2.glb',            dims: {x: 1.2, z: 0.4}, radius: 0.8, seats: 0, name: "Regal (Rund Offen)", acousticBonus: 3.0 },
+    'board':         { file: 'tafel_classic_bearbeitet-v11.glb',     dims: {x: 2.0, z: 0.2}, radius: 0.2, seats: 0, isWallItem: true, name: "Tafel (Klassisch)", acousticBonus: 1.0 },
+    'board_digital': { file: 'tafel_digital_bearbeitet-v10.glb',     dims: {x: 2.0, z: 0.2}, radius: 0.2, seats: 0, isWallItem: true, name: "Tafel (Digital)", acousticBonus: 1.0 },
+    
+    'cabinet_short': { file: 'kurzer Schrank.glb',                   dims: {x: 1.0, z: 0.5}, radius: 0.7, seats: 0, name: "Schrank (Kurz)", acousticBonus: 4.0 },
+    'cabinet_long':  { file: 'langer_Schrank.glb',                   dims: {x: 1.8, z: 0.5}, radius: 1.0, seats: 0, name: "Schrank (Lang)", acousticBonus: 6.0 },
+    'sofa':          { file: 'sofa_bearbeitet-v15.glb',              dims: {x: 2.0, z: 0.9}, radius: 1.1, seats: 2, name: "Sofa", acousticBonus: 8.0 },
 
     // --- Prozedurale Objekte ---
-    // Teppich dicker (0.04) und höherer Offset (0.02) gegen Z-Fighting
     'carpet_proc': { 
         procedural: true, type: 'box', dims: {x: 3.0, y: 0.04, z: 2.0}, color: 0x8D6E63, 
         name: "Akustik-Teppich", acousticBonus: 5.0, seats: 0, yOffset: 0.18, radius: 0.1, noShadow: true 
@@ -242,15 +238,15 @@ const ASSETS = {
         data: null, name: "Avatar (Lernender)", radius: 0.4, seats: 0, acousticBonus: 0.5 
     },
 
-    // --- Gruppenkonstellationen ---
-    'k1': { file: 'Tischaufstellung1.glb',    dims: {x: 1.6, z: 1.2}, radius: 1.0, seats: 2, name: "2er Ecktisch", acousticBonus: 4.0 }, 
-    'k2': { file: 'Tischaufstellung2.glb',    dims: {x: 1.6, z: 1.4}, radius: 1.1, seats: 2, name: "2er Vis-a-Vis", acousticBonus: 4.0 },
-    'k3': { file: 'Tischaufstellung3.glb',    dims: {x: 3.2, z: 1.6}, radius: 1.8, seats: 8, name: "8er Gruppentisch", acousticBonus: 16.0 },
-    'k4': { file: 'Tischkonstellation4.glb',  dims: {x: 3.5, z: 3.5}, radius: 2.0, seats: 8, name: "8er Kreis", acousticBonus: 16.0 },
-    'k5': { file: 'Tischkonstellation5.glb',  dims: {x: 2.2, z: 2.2}, radius: 1.5, seats: 4, name: "4er Ecktisch", acousticBonus: 8.0 },
-    'k6': { file: 'Tischkonstellation6.glb',  dims: {x: 3.0, z: 2.0}, radius: 1.8, seats: 6, name: "6er Gruppentisch", acousticBonus: 12.0 }, 
-    'k7': { file: 'Tischkonstellation7.glb',  dims: {x: 4.0, z: 3.0}, radius: 2.2, seats: 11, name: "11er U-Form", acousticBonus: 22.0 },
-    'k8': { file: 'Tischkonstellation8.glb',  dims: {x: 3.5, z: 3.0}, radius: 2.0, seats: 9, name: "9er U-Form", acousticBonus: 18.0 },
+    // --- Gruppenkonstellationen (Platzhalter) ---
+    'k1': { procedural: true, type: 'box', dims: {x: 1.6, y: 0.1, z: 1.2}, color: 0xcccccc, radius: 1.0, seats: 2, name: "2er Ecktisch (Platzhalter)", acousticBonus: 4.0 }, 
+    'k2': { procedural: true, type: 'box', dims: {x: 1.6, y: 0.1, z: 1.4}, color: 0xcccccc, radius: 1.1, seats: 2, name: "2er Vis-a-Vis (Platzhalter)", acousticBonus: 4.0 },
+    'k3': { procedural: true, type: 'box', dims: {x: 3.2, y: 0.1, z: 1.6}, color: 0xcccccc, radius: 1.8, seats: 8, name: "8er Gruppentisch (Platzhalter)", acousticBonus: 16.0 },
+    'k4': { procedural: true, type: 'box', dims: {x: 3.5, y: 0.1, z: 3.5}, color: 0xcccccc, radius: 2.0, seats: 8, name: "8er Kreis (Platzhalter)", acousticBonus: 16.0 },
+    'k5': { procedural: true, type: 'box', dims: {x: 2.2, y: 0.1, z: 2.2}, color: 0xcccccc, radius: 1.5, seats: 4, name: "4er Ecktisch (Platzhalter)", acousticBonus: 8.0 },
+    'k6': { procedural: true, type: 'box', dims: {x: 3.0, y: 0.1, z: 2.0}, color: 0xcccccc, radius: 1.8, seats: 6, name: "6er Gruppentisch (Platzhalter)", acousticBonus: 12.0 }, 
+    'k7': { procedural: true, type: 'box', dims: {x: 4.0, y: 0.1, z: 3.0}, color: 0xcccccc, radius: 2.2, seats: 11, name: "11er U-Form (Platzhalter)", acousticBonus: 22.0 },
+    'k8': { procedural: true, type: 'box', dims: {x: 3.5, y: 0.1, z: 3.0}, color: 0xcccccc, radius: 2.0, seats: 9, name: "9er U-Form (Platzhalter)", acousticBonus: 18.0 },
   },
 };
 
@@ -1794,6 +1790,30 @@ function getOrLoadFurniture(key) {
             const model = result.scene || result;
             model.scale.set(GLOBAL_SCALE, GLOBAL_SCALE, GLOBAL_SCALE);
             disableCullingRecursively(model);
+            
+            // PBR Maps entfernen und absolut matte Basisfarbe erzwingen
+            model.traverse((child) => {
+                if (child.isMesh && child.material) {
+                    const stripPBR = (mat) => {
+                        mat.roughness = 1.0;
+                        mat.metalness = 0.0;
+                        mat.normalMap = null;
+                        mat.roughnessMap = null;
+                        mat.metalnessMap = null;
+                        mat.aoMap = null;
+                        mat.emissiveMap = null;
+                        mat.envMap = null;
+                        mat.needsUpdate = true;
+                    };
+                    
+                    if (Array.isArray(child.material)) {
+                        child.material.forEach(stripPBR);
+                    } else {
+                        stripPBR(child.material);
+                    }
+                }
+            });
+
             obj.data = model;
             resolve(model);
         }, undefined, (err) => { resolve(null); });
@@ -1884,7 +1904,7 @@ function setupRoom(model, filename) {
       if (child.isMesh && child.material) {
           if (!child.userData.origMaterial) {
               child.material = child.material.clone();
-              child.material.color.setHex(0xd1d5db); // Ein mattes, sattes Grau
+              child.material.color.setHex(0xe5e7eb); // Ein helleres Grau
               child.material.roughness = 0.9;
               child.material.metalness = 0.0;
               child.userData.origMaterial = child.material;
@@ -1958,23 +1978,6 @@ function createFurnitureInstance(typeId, x, z, rotY) {
         if (!info.data) return; 
         visual = info.data.clone();
         disableCullingRecursively(visual);
-        
-        // NEU: Farblosen Möbeln standardmäßig eine edle dunkle Farbe geben
-        const colorlessFurniture = [
-            'table_square', 'table_double', 'sofa', 'board', 'teacher', 
-            'cupboard', 'cabinet_short', 'cabinet_long'
-        ];
-        
-        if (colorlessFurniture.includes(typeId)) {
-            visual.traverse(child => {
-                if (child.isMesh && child.material) {
-                    // Material klonen, damit wir es unabhängig einfärben können
-                    child.material = child.material.clone(); 
-                    // Edles, tiefes Schieferblau/Anthrazit setzen
-                    child.material.color.setHex(0x2c3e50); 
-                }
-            });
-        }
 
         const box = new THREE.Box3().setFromObject(visual);
         const center = new THREE.Vector3(); box.getCenter(center);

@@ -721,23 +721,21 @@
           <div class="panel-content">
             <label style="color:#6b7280; font-size:10px; font-weight:700; display:block; margin-bottom:8px; letter-spacing:0.5px;">SITZGELEGENHEITEN & TISCHE</label>
             <div class="item-grid">
-              <button onclick="app.addFurniture('row_combo')">Tisch+Stuhl</button>
-              <button onclick="app.addFurniture('chair')">Stuhl</button>
-              <button onclick="app.addFurniture('tano')">Tano-Tisch</button>
-              <button onclick="app.addFurniture('triangle')">Dreieck</button>
-              <button onclick="app.addFurniture('table_square')">Quadrat-Tisch</button>
-              <button onclick="app.addFurniture('table_double')">2er Tisch</button>
+              <button onclick="app.addFurniture('row_combo')">Schulbank</button>
+              <button onclick="app.addFurniture('chair')">Schulstuhl</button>
+              <button onclick="app.addFurniture('chair_red')">Stuhl (Stoff Rot)</button>
+              <button onclick="app.addFurniture('triangle')">Dreieckstisch</button>
               <button onclick="app.addFurniture('sofa')">Sofa</button>
             </div>
 
             <label style="color:#6b7280; font-size:10px; font-weight:700; display:block; margin-bottom:8px; margin-top:15px; letter-spacing:0.5px;">MÖBEL & TECHNIK</label>
             <div class="item-grid">
-              <button onclick="app.addFurniture('board')">Tafel</button>
-              <button onclick="app.addFurniture('teacher')">Pult</button>
-              <button onclick="app.addFurniture('cupboard')">Regal (Rund)</button>
+              <button onclick="app.addFurniture('board')">Tafel (Klassisch)</button>
+              <button onclick="app.addFurniture('board_digital')">Tafel (Digital)</button>
+              <button onclick="app.addFurniture('cupboard')">Schrank (Rund)</button>
+              <button onclick="app.addFurniture('cupboard_open')">Regal (Offen)</button>
               <button onclick="app.addFurniture('cabinet_short')">Schrank (Kurz)</button>
               <button onclick="app.addFurniture('cabinet_long')">Schrank (Lang)</button>
-              <button onclick="app.addFurniture('laptop')">Laptop</button>
             </div>
             
             <label style="color:#6b7280; font-size:10px; font-weight:700; display:block; margin-bottom:8px; margin-top:15px; letter-spacing:0.5px;">AKUSTIK & BARRIEREFREIHEIT</label>
@@ -745,6 +743,22 @@
               <button onclick="app.addFurniture('carpet_proc')">Teppich</button>
               <button onclick="app.addFurniture('partition_proc')">Trennwand</button>
               <button onclick="app.addFurniture('absorber_proc')">Wand-Absorber</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel collapsed">
+          <div class="panel-header" onclick="togglePanel(this)">Konstellationen</div>
+          <div class="panel-content">
+            <div class="preset-grid">
+              <button class="preset-btn" onclick="alert('Platzhalter - Funktion wird überarbeitet')">2er Ecktisch</button>
+              <button class="preset-btn" onclick="alert('Platzhalter - Funktion wird überarbeitet')">2er Vis-a-Vis</button>
+              <button class="preset-btn" onclick="alert('Platzhalter - Funktion wird überarbeitet')">4er Ecktisch</button>
+              <button class="preset-btn" onclick="alert('Platzhalter - Funktion wird überarbeitet')">6er Gruppe</button>
+              <button class="preset-btn" onclick="alert('Platzhalter - Funktion wird überarbeitet')">8er Kreis</button>
+              <button class="preset-btn" onclick="alert('Platzhalter - Funktion wird überarbeitet')">8er Gruppe</button>
+              <button class="preset-btn" onclick="alert('Platzhalter - Funktion wird überarbeitet')">9er U-Form</button>
+              <button class="preset-btn" onclick="alert('Platzhalter - Funktion wird überarbeitet')">11er U-Form</button>
             </div>
           </div>
         </div>
